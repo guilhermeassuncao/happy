@@ -1,6 +1,4 @@
-<div align="center">
-<h1>Proffy</h1>
-</div>
+# Proffy
 
 <br>
 
