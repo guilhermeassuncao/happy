@@ -6,8 +6,8 @@
 }
 
 #container {
-	margin: auto !important;
-	width: 90%;
+	margin: auto;
+	width: min(90%, 112rem);
 }
 
 .location,
@@ -27,6 +27,7 @@ h1 {
 	justify-content: center;
 	margin: auto;
 	transition: 200ms;
+	animation-delay: 1000ms;
 }
 
 .visit a:hover {
@@ -43,12 +44,59 @@ h1 {
 
 main h1 {
 	animation-delay: 600ms;
+	font-size: clamp(4rem, 8vh, 8.4rem);
 }
 
 .visit p {
 	animation-delay: 800ms;
 }
 
-.visit a {
-	animation-delay: 1000ms;
+/*Desktop*/
+@media (min-width:760px) {
+	#container {
+		padding: 5rem 2rem;
+		background: url("../images/bg.svg") no-repeat 80%/clamp(30rem, 54vw, 56rem);
+	}
+
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.location,
+	.visit p,
+	h1 {
+		height: initial;
+		text-align: initial;
+	}
+
+	.location{
+		text-align: right;
+		font-size: 2.4rem;
+		line-height: 1.5;
+	}
+
+	main h1{
+		font-weight: 800;
+		width: min(300px, 80%);
+		line-height: 0.88;
+		margin: clamp(10%, 9vh, 12%) 0 4rem;
+	}
+
+	.visit p{
+		font-size: 2.4rem;
+		line-height: 1.5;
+		width: clamp(20rem, 20vw, 30rem);
+	}
+
+	.visit{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.visit a{
+		margin: initial;
+	}
 }
