@@ -1,5 +1,5 @@
 <div align="center">
-# Proffy
+<h1>Proffy</h1>
 </div>
 
 <br>
