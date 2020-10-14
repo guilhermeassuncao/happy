@@ -11,8 +11,39 @@ const icon = L.icon({
     iconAnchor: [29, 68],
 })
 
+let marker;
+
 //Create Add Marker
-// L.marker([-18.7171333, -39.8566417], {
-//         icon
-//     })
-//     .addTo(mymap)
+mymap.on('click', (event) =>{
+    const lat = event.latlng.lat;
+    const lng = event.latlng.lng;
+
+    document.querySelector('[name=lat]').value = lat;
+    document.querySelector('[name=lng]').value = lng;
+
+    marker && mymap.removeLayer(marker)
+
+    marker = L.marker([lat, lng], { icon }).addTo(mymap)
+})
+
+function addPhotoField() {
+    const container = document.querySelector('#images')
+
+    const fieldsContainer = document.querySelectorAll('.new-upload')
+
+    const newFieldContainer = fieldsContainer[fieldsContainer.length - 1].cloneNode(true)
+
+    const input = newFieldContainer.children[0]
+
+    if (input.value == "") {
+        return
+    }
+
+    input.value = ""
+
+    container.appendChild(newFieldContainer)
+}
+
+function deleteField(event) {
+    console.log(event);
+}
