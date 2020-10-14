@@ -27,30 +27,35 @@
 
 <body>
     <div id="page-orphanage">
-        <aside class="animate-right">
-
+        <aside class="animate-right sidebar">
+            <img src="./public/images/map-marker.svg" alt="Happy">
+            <footer>
+                <button onclick="history.back()">
+                    <img src="./public/images/arrow-back.svg" alt="Voltar">
+                </button>
+            </footer>
         </aside>
-        <main>
+        <main class="animate-appear with-sidebar">
             <div class="orphanage-details">
-                <img src="./public/images/home.jpg" alt="Lar das Meninas">
+                <img class="banner" src="./public/images/unsplash/ashton-bingham-SAHBl2UpXco-unsplash.jpg" alt="Photo by Ashton-Bingham on Unsplash">
                 <div class="images">
-                    <button class="active" type="button">
-                        <img src="./public/images/home.jpg" alt="Lar das Meninas">  
+                    <button onclick="selectImage(event)" class="active" type="button">
+                        <img src="./public/images/unsplash/ashton-bingham-SAHBl2UpXco-unsplash.jpg" alt="Photo by Ashton Bingham on Unsplash">  
                     </button>
-                    <button type="button">
-                        <img src="./public/images/home.jpg" alt="Lar das Meninas">  
+                    <button onclick="selectImage(event)" type="button">
+                        <img src="./public/images/unsplash/frank-mckenna-LhOjrOlcLx4-unsplash.jpg" alt="Photo by Frank Mckenna on Unsplash">  
                     </button>
-                    <button type="button">
-                        <img src="./public/images/home.jpg" alt="Lar das Meninas">  
+                    <button onclick="selectImage(event)" type="button">
+                        <img src="./public/images/unsplash/kelly-sikkema-JRVxgAkzIsM-unsplash.jpg" alt="Photo by Kelly Sikkemas on Unsplash">  
                     </button>
-                    <button type="button">
-                        <img src="./public/images/home.jpg" alt="Lar das Meninas">  
+                    <button onclick="selectImage(event)" type="button">
+                        <img src="./public/images/unsplash/leo-rivas-wtxcaDIdOCM-unsplash.jpg" alt="Photo by Leo Rivas on Unsplash">  
                     </button>
-                    <button type="button">
-                        <img src="./public/images/home.jpg" alt="Lar das Meninas">  
+                    <button onclick="selectImage(event)" type="button">
+                        <img src="./public/images/unsplash/robert-collins-lP_FbBkMn1c-unsplash.jpg" alt="Photo by Robert Collins on Unsplash">  
                     </button>
-                    <button type="button">
-                        <img src="./public/images/home.jpg" alt="Lar das Meninas">  
+                    <button onclick="selectImage(event)" type="button">
+                        <img src="./public/images/unsplash/shirota-yuri-p0hDztR46cw-unsplash.jpg" alt="Photo by Shirota Yuri on Unsplash">  
                     </button>
                 </div>
                 <div class="orphanage-details-content">
@@ -74,11 +79,11 @@
                             <img src="./public/images/info.svg" alt="Informações">
                             Atendemos fim de semana
                         </div>
-                        <button class="primary-button" type="button">
-                            <img src="./public/images/whatsapp.svg" alt="Whatsapp">
-                            Entrar em contato
-                        </button>
                     </div>
+                    <button class="primary-button" type="button">
+                        <img src="./public/images/whatsapp.svg" alt="Whatsapp">
+                        Entrar em contato
+                    </button>
                 </div>
             </div>
         </main>
