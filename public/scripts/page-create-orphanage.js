@@ -45,5 +45,28 @@ function addPhotoField() {
 }
 
 function deleteField(event) {
-    console.log(event);
+    const span = event.currentTarget
+
+    const fieldsContainer = document.querySelectorAll('.new-upload')
+
+    if(fieldsContainer.length <2){
+        span.parentNode.children[0].value = ''
+        return
+    }
+
+    span.parentNode.remove()
+
+
+
+}
+
+function toggleSelect(event) {
+    document.querySelectorAll('.button-select button').forEach(function(button){button.classList.remove('active')})
+
+    const button = event.currentTarget
+    button.classList.add('active')
+
+    const input = document.querySelector('[name="open-on-weekends"]')
+
+    input.value = button.dataset.value
 }
