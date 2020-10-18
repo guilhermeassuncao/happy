@@ -6,8 +6,13 @@ const option = {
     zoomControl: false
 }
 
+//Pegar Dados
+const spanLat = document.querySelector('span[data-lat]').dataset.lat
+const spanLng = document.querySelector('span[data-lng]').dataset.lng
+
+
 //Create Map
-const mymap = L.map("mapid", option).setView([-18.7171333, -39.8566417], 15)
+const mymap = L.map("mapid", option).setView([spanLat, spanLng], 15)
 
 //Create TileLayer
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(mymap)
@@ -21,7 +26,7 @@ const icon = L.icon({
 })
 
 //Create Add Marker
-L.marker([-18.7171333, -39.8566417], {
+L.marker([spanLat, spanLng], {
         icon
     })
     .addTo(mymap)

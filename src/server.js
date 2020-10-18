@@ -8,6 +8,8 @@ const server = express()
 
 
 server
+//Utilizar body do req
+.use(express.urlencoded({extended: true}))
 //Iniciando Arquivos Estaticos
 .use(express.static('public'))
 //Configurar Template Engine
@@ -18,6 +20,7 @@ server
 .get('/orphanage', pages.orphanage)
 .get('/orphanages', pages.orphanages)
 .get('/create-orphanage', pages.createOrphanage)
+.post('/save-orphanage', pages.saveOrphanage)
 //Ligar Servidor
 .listen(5500)
 
