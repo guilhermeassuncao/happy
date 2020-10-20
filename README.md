@@ -18,7 +18,7 @@ Professor - Mayk Brito
 
 <br>
 
-## :hammer: Tecnologias
+## :rocket: Tecnologias
 
 - HTML5
 - CSS3
