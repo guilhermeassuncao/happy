@@ -23,8 +23,9 @@ Professor - Mayk Brito
 - HTML5
 - CSS3
 - JavaScript
-- NodeJS
+- Node.js
 - SQLite
+- Handlebars
 
 <br>
 
