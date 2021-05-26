@@ -1,102 +1,102 @@
 #page-landing {
-	background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%) no-repeat;
-	min-height: 100vh;
-	text-align: center;
-	display: flex;
+    background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%) no-repeat;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
 }
 
 #container {
-	margin: auto;
-	width: min(90%, 112rem);
+    margin: auto;
+    width: min(90%, 112rem);
 }
 
 .location,
 .visit p,
 h1 {
-	height: 16vh;
+    height: 16vh;
 }
 
 .visit a {
-	height: 8rem;
-	width: 8rem;
-	background: #ffd666;
-	border: none;
-	border-radius: 3rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: auto;
-	transition: 200ms;
-	animation-delay: 1000ms;
+    height: 8rem;
+    width: 8rem;
+    background: #ffd666;
+    border: none;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    transition: 200ms;
+    animation-delay: 1000ms;
 }
 
 .visit a:hover {
-	background: #96feff
+    background: #96feff;
 }
 
 #logo {
-	animation-delay: 200ms;
+    animation-delay: 200ms;
 }
 
 .location {
-	animation-delay: 400ms;
+    animation-delay: 400ms;
 }
 
 main h1 {
-	animation-delay: 600ms;
-	font-size: clamp(4rem, 8vh, 8.4rem);
+    animation-delay: 600ms;
+    font-size: clamp(4rem, 8vh, 8.4rem);
 }
 
 .visit p {
-	animation-delay: 800ms;
+    animation-delay: 800ms;
 }
 
 /*Desktop*/
-@media (min-width:760px) {
-	#container {
-		padding: 5rem 2rem;
-		background: url("../images/bg.svg") no-repeat 80%/clamp(30rem, 54vw, 56rem);
-	}
+@media (min-width: 760px) {
+    #container {
+        padding: 5rem 2rem;
+        background: url("../images/bg.svg") no-repeat 80% / clamp(30rem, 54vw, 56rem);
+    }
 
-	header {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-	.location,
-	.visit p,
-	h1 {
-		height: initial;
-		text-align: initial;
-	}
+    .location,
+    .visit p,
+    h1 {
+        height: initial;
+        text-align: initial;
+    }
 
-	.location{
-		text-align: right;
-		font-size: 2.4rem;
-		line-height: 1.5;
-	}
+    .location {
+        text-align: right;
+        font-size: 2.4rem;
+        line-height: 1.5;
+    }
 
-	main h1{
-		font-weight: 800;
-		width: min(300px, 80%);
-		line-height: 0.88;
-		margin: clamp(10%, 9vh, 12%) 0 4rem;
-	}
+    main h1 {
+        font-weight: 800;
+        width: min(300px, 80%);
+        line-height: 0.88;
+        margin: clamp(10%, 9vh, 12%) 0 4rem;
+    }
 
-	.visit p{
-		font-size: 2.4rem;
-		line-height: 1.5;
-		width: clamp(20rem, 20vw, 30rem);
-	}
+    .visit p {
+        font-size: 2.4rem;
+        line-height: 1.5;
+        width: clamp(20rem, 20vw, 30rem);
+    }
 
-	.visit{
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
+    .visit {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-	.visit a{
-		margin: initial;
-	}
+    .visit a {
+        margin: initial;
+    }
 }

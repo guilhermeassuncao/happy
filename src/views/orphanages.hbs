@@ -1,65 +1,58 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <!-- Meta Tags -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Fim Meta Tags -->
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Fim Meta Tags -->
 
-    <!-- CSS -->
-    <link rel="icon" href="images/logo-icon.png" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap">
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/animation.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
-    <link rel="stylesheet" href="css/page-orphanages.css" />
-    <!-- Fim CSS -->
+        <!-- CSS -->
+        <link rel="icon" href="images/logo-icon.png" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/animation.css" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+        <link rel="stylesheet" href="css/page-orphanages.css" />
+        <!-- Fim CSS -->
 
-    <!-- JS -->
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-    <!-- Fim JS -->
+        <!-- JS -->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <!-- Fim JS -->
 
-    <!-- Titulo -->
-    <title>Localize um orfanato | Happy</title>
-    <!-- Fim Titulo -->
-</head>
+        <!-- Titulo -->
+        <title>Localize um orfanato | Happy</title>
+        <!-- Fim Titulo -->
+    </head>
 
-<body>
-    <div id="page-orphanages">
-        <aside class="animate-right">
-            <header>
-                <img src="images/map-marker.svg" alt="Happy">
-                <h2>Escolha um orfanato no mapa</h2>
-                <p>Muitas crianças estão esperando sua visita :)</p>
-            </header>
-            <footer>
-                <strong>São Mateus</strong>
-                <p>Espírito Santo</p>
-            </footer>
-        </aside>
-        <div id="mapid" class="animate-appear"></div>
+    <body>
+        <div id="page-orphanages">
+            <aside class="animate-right">
+                <header>
+                    <img src="images/map-marker.svg" alt="Happy" />
+                    <h2>Escolha um orfanato no mapa</h2>
+                    <p>Muitas crianças estão esperando sua visita :)</p>
+                </header>
+                <footer>
+                    <strong>São Mateus</strong>
+                    <p>Espírito Santo</p>
+                </footer>
+            </aside>
+            <div id="mapid" class="animate-appear"></div>
 
-        <div id="orphanages">
-            {{#each orphanages}}
-                <span hidden 
-                    data-id="{{this.id}}"
-                    data-name="{{this.name}}"
-                    data-lat="{{this.lat}}"
-                    data-lng="{{this.lng}}"
-                ></span>
-            {{/each}}
+            <div id="orphanages">
+                {{#each orphanages}}
+                    <span hidden data-id="{{this.id}}" data-name="{{this.name}}" data-lat="{{this.lat}}" data-lng="{{this.lng}}"></span>
+                {{/each}}
+            </div>
+
+            <a href="/create-orphanage" title="Cadastre um orfanato" class="create-orphanages">
+                <img src="images/plus.svg" alt="Criar Orfanato" />
+            </a>
         </div>
 
-
-        <a href="/create-orphanage"  title="Cadastre um orfanato" class="create-orphanages">
-            <img src="images/plus.svg" alt="Criar Orfanato">
-        </a>
-    </div>
-
-    <!-- JS -->
-    <script src="scripts/page-orphanages.js"></script>
-    <!-- Fim JS -->
-</body>
+        <!-- JS -->
+        <script src="scripts/page-orphanages.js"></script>
+        <!-- Fim JS -->
+    </body>
 
 </html>
