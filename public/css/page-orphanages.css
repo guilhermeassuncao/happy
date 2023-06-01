@@ -18,7 +18,7 @@ aside h2 {
     line-height: 1.1;
     font-weight: 800;
     font-size: clamp(2rem, 5vw, 3.6rem);
-    font-family: "Nunito", sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 aside p {
@@ -26,7 +26,7 @@ aside p {
     line-height: 1.5;
     font-weight: 400;
     font-size: 1.6rem;
-    font-family: "Nunito", sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 aside footer p {
@@ -97,5 +97,5 @@ a.create-orphanages:hover {
     font-weight: 700;
     font-size: 2rem;
     line-height: 1;
-    font-family: "Nunito", sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
